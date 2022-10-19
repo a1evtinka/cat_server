@@ -65,7 +65,7 @@ app.use('/api/feedback', feedbackRouter);
 app.use('/api/comments', commentsRouter);
 // для деплоя
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/build/index.html'))
+  res.sendFile(path.join(__dirname, '../../client/cat_client/build/index.html'))
 })
 
 // eslint-disable-next-line no-unused-vars
